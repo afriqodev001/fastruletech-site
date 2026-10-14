@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact FastRuleTech | Free POTS Line Audit</title>
+<meta name="description" content="Book a free POTS line audit or request a business phone quote. FastRuleTech serves Minnesota and the Upper Midwest.">
+<link rel="canonical" href="https://{{DOMAIN}}/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact FastRuleTech | Free POTS Line Audit">
+<meta property="og:description" content="Book a free POTS line audit or request a business phone quote. FastRuleTech serves Minnesota and the Upper Midwest.">
+<meta property="og:url" content="https://{{DOMAIN}}/contact.html">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,600..800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+  // Preselect the topic when arriving from a ?topic= link
+  document.addEventListener('DOMContentLoaded', function () {
+    var t = new URLSearchParams(location.search).get('topic');
+    var s = document.getElementById('topic');
+    if (t && s && s.querySelector('option[value="' + t + '"]')) s.value = t;
+  });
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="logo" href="./"><img src="assets/img/logo.svg" width="30" height="30" alt=""><span>FastRule<b>Tech</b></span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="pots-line-replacement.html">POTS Replacement</a></li>
+      <li><a href="business-phone-systems.html">Business Phones</a></li>
+      <li><a href="partners.html">For Partners</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-cta"><a href="contact.html" aria-current="page">Free Line Audit</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<div class="page-head">
+    <div class="wrap">
+      <div class="crumbs"><a href="./">Home</a> / Contact</div>
+      <span class="eyebrow">Contact</span>
+      <h1>Book a free line audit or ask us anything</h1>
+      <p class="lede">Tell us a little about your site and we'll reply within one business day.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap split">
+      <form action="https://formspree.io/f/{{FORMSPREE_ID}}" method="POST" data-ajax>
+        <div class="row2">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="topic">What do you need?</label>
+            <select id="topic" name="topic">
+              <option value="audit">Free POTS line audit</option>
+              <option value="phones">Business phone system quote</option>
+              <option value="network">Network or cabling work</option>
+              <option value="partner">Partner / subcontract work</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="sites">Number of sites</label><input id="sites" name="sites" inputmode="numeric" placeholder="e.g. 1, 5, 40"></div>
+        </div>
+        <div class="field"><label for="city">City or cities</label><input id="city" name="city" placeholder="e.g. Bloomington, St. Cloud"></div>
+        <div class="field"><label for="message">Tell us about it</label><textarea id="message" name="message" placeholder="Fire alarm and elevator lines at two buildings, phone bill attached…" required></textarea></div>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div><button class="btn btn-primary" type="submit">Send message</button></div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside>
+        <div class="card">
+          <h3>Reach us directly</h3>
+          <ul class="contact-list">
+            <li><span>Phone</span><a href="tel:{{PHONE_LINK}}">{{PHONE}}</a></li>
+            <li><span>Email</span><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+            <li><span>Based in</span><b>{{CITY}}, Minnesota</b></li>
+            <li><span>Hours</span><b>Mon–Fri, 8am–5pm CT</b></li>
+          </ul>
+        </div>
+        <div class="card" style="margin-top:20px">
+          <h3>For the line audit, it helps to have</h3>
+          <ul class="ticks">
+            <li>A recent phone bill showing your analog lines</li>
+            <li>Your alarm monitoring company's name</li>
+            <li>Your elevator service company's name</li>
+            <li>Site addresses</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./"><img src="assets/img/logo.svg" width="28" height="28" alt=""><span>FastRuleTech</span></a>
+        <p>POTS line replacement, business phone systems and field services for Minnesota and the Upper Midwest.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="pots-line-replacement.html">POTS line replacement</a></li>
+        <li><a href="business-phone-systems.html">Business phone systems</a></li>
+        <li><a href="partners.html">Field services for partners</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div><h4>Reach us</h4><ul>
+        <li><a href="tel:{{PHONE_LINK}}">{{PHONE}}</a></li>
+        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+        <li>{{CITY}}, Minnesota</li>
+      </ul></div>
+    </div>
+    <div class="legal"><span>© <span data-year>2026</span> FastRuleTech</span><span>Serving MN · WI · ND · SD · IA</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
